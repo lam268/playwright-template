@@ -1,0 +1,60 @@
+{
+  "name": "tabist-automation-playwright",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "report": "node reporter.js",
+    "common": "npx ts-node src/step-definitions/class/index.ts",
+    "lint": "eslint \"{src,apps,libs}/**/*.ts\" --fix",
+    "format": "prettier --write \"src/**/*.ts\""
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "",
+  "devDependencies": {
+    "@types/expect": "24.3.0",
+    "@types/i18n": "^0.13.1",
+    "@types/lodash": "4.14.176",
+    "@types/node": "16.11.6",
+    "@typescript-eslint/eslint-plugin": "^5.3.1",
+    "@typescript-eslint/parser": "^5.3.1",
+    "eslint": "^8.1.0",
+    "eslint-config-prettier": "8.3.0",
+    "eslint-plugin-import": "2.25.2",
+    "eslint-plugin-prettier": "4.0.0",
+    "fs-extra": "10.0.0",
+    "open": "8.4.0",
+    "prettier": "2.4.1",
+    "rimraf": "3.0.2",
+    "standard-version": "9.3.2",
+    "ts-node": "10.4.0",
+    "typescript": "^4.4.4"
+  },
+  "dependencies": {
+    "@cucumber/cucumber": "^8.7.0",
+    "@cucumber/html-formatter": "17.0.0",
+    "@cucumber/pretty-formatter": "1.0.0-alpha.1",
+    "@hapi/joi": "^17.1.1",
+    "@hapi/joi-date": "^2.0.1",
+    "@types/fs-extra": "9.0.13",
+    "axios": "^0.24.0",
+    "bluebird": "^3.7.2",
+    "csv-parse": "^5.0.4",
+    "cucumber-console-formatter": "1.0.0",
+    "cucumber-html-reporter": "^5.5.0",
+    "expect": "27.3.1",
+    "faker": "^5.5.3",
+    "i18n": "^0.13.3",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.4",
+    "mysql2": "^2.3.3",
+    "path": "^0.12.7",
+    "playwright": "^1.16.3",
+    "sequelize": "^6.12.5"
+  }
+}
